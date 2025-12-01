@@ -1,21 +1,58 @@
 #!/bin/bash
 
-# Check if Docker is running
-if ! docker info > /dev/null 2>&1; then
-    echo "Error: Docker is not running. Please start Docker and try again."
-    exit 1
-fi
+# Function to check if Docker is ready
+wait_for_docker() {
+    echo "Checking Docker status..."
+    if ! docker ps > /dev/null 2>&1; then
+        echo "Docker is not running."
+        if [[ "$OSTYPE" == "darwin"* ]]; then
+            echo "Attempting to start Docker Desktop..."
+            open -a Docker
+            echo "Waiting for Docker to start (this may take a minute)..."
+            while ! docker ps > /dev/null 2>&1; do
+                sleep 2
+                printf "."
+            done
+            echo ""
+            echo "Docker started!"
+        else
+            echo "Error: Docker is not running. Please start it manually."
+            exit 1
+        fi
+    else
+        echo "Docker is running."
+    fi
+}
+
+wait_for_docker
 
 PORT=3000
 
-# Check if port is in use
-if lsof -i :$PORT > /dev/null; then
-    echo "Port $PORT is in use. Killing process..."
-    # Get PID and kill safely
-    lsof -t -i :$PORT | xargs kill -9
-    echo "Process on port $PORT killed."
+# Cleanup existing containers using the port
+echo "Checking for existing containers on port $PORT..."
+# Find container ID mapped to port 3000
+CONTAINER_ID=$(docker ps -q --filter "publish=$PORT")
+
+if [ ! -z "$CONTAINER_ID" ]; then
+    echo "Stopping existing container $CONTAINER_ID..."
+    docker stop $CONTAINER_ID
+    # Wait a moment for port to free up
+    sleep 2
 else
-    echo "Port $PORT is free."
+    echo "No container running on port $PORT."
+fi
+
+# Double check if port is still in use by a NON-Docker process (rare but possible)
+if lsof -i :$PORT > /dev/null; then
+    # Check if it's NOT com.docker (Docker backend)
+    PID=$(lsof -t -i :$PORT)
+    PROCESS_NAME=$(ps -p $PID -o comm=)
+    if [[ "$PROCESS_NAME" == *"com.docker"* ]]; then
+        echo "Port $PORT is held by Docker backend. Assuming it's free for a new container."
+    else
+        echo "Warning: Port $PORT is in use by $PROCESS_NAME (PID $PID). Attempting to kill..."
+        kill -9 $PID
+    fi
 fi
 
 # Ensure data directory exists
