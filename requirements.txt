@@ -4,3 +4,4 @@ pandas>=1.4
 requests>=2.28
 tqdm>=4.64
 joblib>=1.2
+nltk>=3.8

@@ -24,8 +24,10 @@ def load_articles(path):
     return ids, docs
 
 
+from src.text_utils import tokenize_and_stem
+
 def build_tfidf(docs, max_features=50000):
-    vec = TfidfVectorizer(max_features=max_features, stop_words="english")
+    vec = TfidfVectorizer(max_features=max_features, tokenizer=tokenize_and_stem)
     X = vec.fit_transform(docs)
     # normalize rows for cosine similarity via dot product
     X = normalize(X, norm="l2", axis=1)

@@ -1,0 +1,34 @@
+{
+  "e6b39023-9d82-4f3e-a0b3-06bffad7a0fa": {},
+  "044e2c76-7b78-4bd4-911b-082794cb4c35": {},
+  "4041596b-2e40-4f81-badd-0b97a7ddd6f0": {},
+  "7d62b7fc-ff6b-4765-8f9c-52aeaac9daad": {},
+  "6100017a-3f24-45ad-bee6-19b2f65fa4b9": {
+    "sport": 1.0
+  },
+  "8bb46f9a-575d-4e69-9851-62f656167c4d": {},
+  "a0726226-85de-4d8f-81b1-8c10c5ff9eea": {
+    "labor": 1.0
+  },
+  "0af354e6-7b69-4fd0-875e-3b447817b5d5": {},
+  "90e4d0d4-fb4a-45a3-a29d-1565e2c5ef42": {},
+  "bdbe0cd3-8dac-4091-967e-fff4903cc884": {},
+  "bee8d870-442c-42d8-93ef-50f77f384dd8": {},
+  "4b97e5bf-c27a-427f-9486-2c314bc98823": {},
+  "5cb69aab-1805-4cd2-a2f1-24bbda095fcf": {},
+  "6089a681-c737-43ef-9f83-0eea2a8b1226": {},
+  "945cf27b-970c-4b36-b88a-eab7d33e79ef": {},
+  "3849f024-1d9c-451b-9f74-b31bef906787": {},
+  "6d87e1d7-8fd3-4b78-b336-9c64edf8736a": {
+    "education": 1.0
+  },
+  "8d1a3cf5-5990-4554-b645-63d160440631": {},
+  "f48400b8-c692-41db-aa78-4570cdcf9029": {
+    "religion and belief": 1.0
+  },
+  "a6b770df-8bd4-42d0-aa3e-205d81e19946": {},
+  "4b6558df-a97f-46ee-9208-fdbd2212c509": {},
+  "5a5ab2a1-d9c4-4e1e-adbf-e0c9c96fe18d": {
+    "environment": 1.0
+  }
+}
