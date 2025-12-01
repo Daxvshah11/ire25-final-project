@@ -4,10 +4,23 @@ Example:
   python scripts/run_session.py --index data_index --n 10 --server http://localhost:3000
 """
 import argparse
+import sys
+import os
+
+# Add project root to sys.path to allow running script directly
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.sim_client import SimulatorClient
 from src.retriever import Retriever
 from src.logger import SessionLogger
-from src.personalizer import load_article_topics, build_user_topic_profiles, rerank_with_user_profile
+from src.personalizer import (
+    load_article_topics, 
+    build_user_topic_profiles, 
+    rerank_with_user_profile,
+    load_user_profiles,
+    save_user_profiles,
+    update_user_profile
+)
 import time
 
 
@@ -17,7 +30,7 @@ def run_one_session(client, retriever, logger):
     query_id = q["query_id"]
     query_text = q["query_text"]
     # retrieve top 10
-    hits = retriever.retrieve(query_text, top_k=10)
+    hits = retriever.retrieve(query_text, top_k=100)
     ranked_ids = [h[0] for h in hits]
     resp = client.post_ranklist(query_id, user_id, ranked_ids)
     logger.log({
@@ -41,9 +54,17 @@ def main():
     retriever = Retriever(index_dir=args.index)
     logger = SessionLogger()
 
-    # load article topics and build user profiles from existing logs (if any)
+    # load article topics
     article_topics = load_article_topics("articles.jsonl")
-    user_profiles = build_user_topic_profiles("logs/sessions.jsonl", article_topics)
+    
+    # Load existing profiles from disk (persistence)
+    # If user_profiles.json doesn't exist, we could fall back to rebuilding from logs, 
+    # but for now let's assume we start from the json or empty.
+    # To be safe: try loading json, if empty, try rebuilding from logs once.
+    user_profiles = load_user_profiles("user_profiles.json")
+    if not user_profiles:
+        print("No saved profiles found. Rebuilding from logs...")
+        user_profiles = build_user_topic_profiles("logs/sessions.jsonl", article_topics)
 
     for i in range(args.n):
         try:
@@ -53,14 +74,17 @@ def main():
             user_id = q["user_id"]
             query_id = q["query_id"]
             query_text = q["query_text"]
-            hits = retriever.retrieve(query_text, top_k=10)
+            hits = retriever.retrieve(query_text, top_k=100)
             ranked_ids = [h[0] for h in hits]
+            
             # if we have a profile for this user, rerank
             if user_id in user_profiles:
                 user_profile = user_profiles[user_id]
                 reranked = rerank_with_user_profile(hits, article_topics, user_profile, alpha=0.8)
                 ranked_ids = [a for a, _ in reranked]
+            
             resp = client.post_ranklist(query_id, user_id, ranked_ids)
+            
             logger.log({
                 "user_id": user_id,
                 "query_id": query_id,
@@ -69,15 +93,18 @@ def main():
                 "actions": resp.get("actions"),
             })
             print("Actions:", resp.get("actions"))
-            # update user_profiles incrementally with this session (so subsequent sessions reflect it)
-            # simple incremental update: if click observed, add counts
+            
+            # Update profile IN MEMORY only
             actions = resp.get("actions", [])
-            if actions and any(a == "Click" for group in actions for a in (group if isinstance(group, list) else [])):
-                # rebuild profiles for simplicity (small dataset)
-                user_profiles = build_user_topic_profiles("logs/sessions.jsonl", article_topics)
+            update_user_profile(user_id, actions, ranked_ids, article_topics, user_profiles)
+            
         except Exception as e:
             print("Error during session:", e)
         time.sleep(0.2)
+
+    # Save profiles to disk at the end of the run
+    print("Saving user profiles to user_profiles.json...")
+    save_user_profiles(user_profiles, "user_profiles.json")
 
 
 if __name__ == "__main__":

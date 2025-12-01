@@ -11,7 +11,7 @@ class Retriever:
         self.matrix = joblib.load(p / "matrix.joblib")
         self.ids = joblib.load(p / "ids.joblib")
 
-    def retrieve(self, query_text, top_k=10):
+    def retrieve(self, query_text, top_k=100):
         qv = self.vectorizer.transform([query_text])
         # normalize qv
         qv = qv / (np.linalg.norm(qv.data) + 1e-12)
@@ -24,7 +24,7 @@ class Retriever:
 def simple_demo(index_dir="data_index"):
     r = Retriever(index_dir=index_dir)
     q = "economic recovery 2025"
-    print(r.retrieve(q, top_k=5))
+    print(r.retrieve(q, top_k=100))
 
 
 if __name__ == "__main__":
