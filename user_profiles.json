@@ -58,9 +58,10 @@
     "labor": 0.08333333333333334
   },
   "bdbe0cd3-8dac-4091-967e-fff4903cc884": {
-    "health": 0.375,
-    "environment": 0.125,
-    "science and technology": 0.5
+    "health": 0.1875,
+    "environment": 0.0625,
+    "science and technology": 0.25,
+    "lifestyle and leisure": 0.5
   },
   "bee8d870-442c-42d8-93ef-50f77f384dd8": {
     "education": 0.25,
@@ -106,12 +107,12 @@
     "religion and belief": 0.3888888888888889
   },
   "8d1a3cf5-5990-4554-b645-63d160440631": {
-    "sport": 0.010416666666666666,
-    "labor": 0.17708333333333334,
-    "health": 0.020833333333333332,
-    "lifestyle and leisure": 0.041666666666666664,
-    "education": 0.08333333333333333,
-    "environment": 0.6666666666666666
+    "sport": 0.005208333333333333,
+    "labor": 0.08854166666666667,
+    "health": 0.5104166666666666,
+    "lifestyle and leisure": 0.020833333333333332,
+    "education": 0.041666666666666664,
+    "environment": 0.3333333333333333
   },
   "f48400b8-c692-41db-aa78-4570cdcf9029": {
     "religion and belief": 0.015625,
@@ -141,10 +142,10 @@
     "lifestyle and leisure": 0.25
   },
   "9db659f1-8b2d-4809-b7c9-1e0f5ee4c9f3": {
-    "education": 0.16666666666666666,
-    "sport": 0.16666666666666666,
-    "lifestyle and leisure": 0.16666666666666666,
-    "health": 0.5
+    "education": 0.08333333333333333,
+    "sport": 0.08333333333333333,
+    "lifestyle and leisure": 0.08333333333333333,
+    "health": 0.75
   },
   "5b042b74-0dc1-40ec-8591-2ac9564d9d4d": {
     "science and technology": 0.25,
@@ -185,9 +186,9 @@
     "religion and belief": 0.25
   },
   "a7e945e5-5b89-4db9-941f-db4424e02c07": {
-    "sport": 0.0625,
-    "lifestyle and leisure": 0.0625,
-    "science and technology": 0.875
+    "sport": 0.015625,
+    "lifestyle and leisure": 0.015625,
+    "science and technology": 0.96875
   },
   "210e921c-2e51-450b-af86-6ab37874ce84": {
     "health": 1.0
@@ -221,11 +222,12 @@
     "lifestyle and leisure": 0.3333333333333333
   },
   "b7fe8725-2498-4115-9bda-6712eca1a4e0": {
-    "lifestyle and leisure": 0.20833333333333334,
-    "science and technology": 0.041666666666666664,
-    "labor": 0.08333333333333333,
-    "sport": 0.16666666666666666,
-    "education": 0.5
+    "lifestyle and leisure": 0.10416666666666667,
+    "science and technology": 0.020833333333333332,
+    "labor": 0.041666666666666664,
+    "sport": 0.08333333333333333,
+    "education": 0.25,
+    "environment": 0.5
   },
   "850430be-4931-4014-8c3e-4113557ff257": {
     "sport": 0.125,
@@ -296,11 +298,11 @@
     "environment": 0.08333333333333333
   },
   "5d9a193a-1b8b-423a-94cc-ea0b7b6fbcf8": {
-    "labor": 0.041666666666666664,
-    "science and technology": 0.041666666666666664,
-    "environment": 0.08333333333333333,
-    "sport": 0.16666666666666666,
-    "health": 0.6666666666666666
+    "labor": 0.5208333333333334,
+    "science and technology": 0.020833333333333332,
+    "environment": 0.041666666666666664,
+    "sport": 0.08333333333333333,
+    "health": 0.3333333333333333
   },
   "e79460b6-af3c-44d2-8e20-045bf62602a5": {
     "health": 1.0
@@ -404,7 +406,8 @@
     "environment": 0.25
   },
   "167e5f13-6a31-467d-94f4-8a7fb4587a8d": {
-    "science and technology": 1.0
+    "science and technology": 0.5,
+    "health": 0.5
   },
   "52f460a1-f4a3-4ab0-9b92-7c8077e98408": {
     "sport": 0.010416666666666668,
@@ -493,12 +496,12 @@
     "health": 1.0
   },
   "e7e9c68b-424e-421a-a835-c0b41b0f3ecc": {
-    "sport": 0.014105902777777778,
-    "environment": 0.0012297453703703704,
-    "health": 0.04600694444444445,
-    "science and technology": 0.08449074074074074,
-    "labor": 0.006944444444444444,
-    "lifestyle and leisure": 0.8472222222222222
+    "sport": 0.5070529513888888,
+    "environment": 0.0006148726851851852,
+    "health": 0.023003472222222224,
+    "science and technology": 0.04224537037037037,
+    "labor": 0.003472222222222222,
+    "lifestyle and leisure": 0.4236111111111111
   },
   "ac963056-2e56-4797-adf1-798239da050b": {},
   "09bdc989-a84f-4b46-a5a9-de7a128dd385": {
@@ -510,19 +513,19 @@
     "lifestyle and leisure": 0.3333333333333333
   },
   "5dc56c96-5e6d-4a7d-a013-00c0b066e056": {
-    "education": 0.005208333333333333,
-    "religion and belief": 0.046875,
-    "environment": 0.34375,
-    "health": 0.10416666666666667,
-    "sport": 0.16666666666666666,
-    "science and technology": 0.3333333333333333
+    "education": 0.001736111111111111,
+    "religion and belief": 0.015625,
+    "environment": 0.4479166666666667,
+    "health": 0.034722222222222224,
+    "sport": 0.05555555555555555,
+    "science and technology": 0.4444444444444444
   },
   "6c59671e-bb6c-40b8-8b13-65163143ff54": {
-    "labor": 0.0625,
-    "science and technology": 0.0625,
-    "lifestyle and leisure": 0.125,
-    "sport": 0.25,
-    "education": 0.5
+    "labor": 0.53125,
+    "science and technology": 0.03125,
+    "lifestyle and leisure": 0.0625,
+    "sport": 0.125,
+    "education": 0.25
   },
   "e28fef80-692f-4cb3-b079-e0c207316888": {
     "religion and belief": 0.5017361111111112,
@@ -594,13 +597,13 @@
   },
   "260c4f03-e2da-4d1c-81cd-fafca88a3a0d": {},
   "28bb68b7-2cc9-4554-b9fc-881ab244a06f": {
-    "labor": 0.05787037037037038,
-    "religion and belief": 0.04398148148148148,
-    "sport": 0.004629629629629629,
-    "health": 0.004629629629629629,
-    "environment": 0.05555555555555555,
-    "education": 0.16666666666666666,
-    "science and technology": 0.6666666666666666
+    "labor": 0.028935185185185192,
+    "religion and belief": 0.021990740740740745,
+    "sport": 0.002314814814814815,
+    "health": 0.002314814814814815,
+    "environment": 0.02777777777777778,
+    "education": 0.08333333333333334,
+    "science and technology": 0.8333333333333334
   },
   "42f9f7e5-8a3f-48ea-8368-0049be8a1afb": {
     "lifestyle and leisure": 0.3541666666666667,
@@ -652,8 +655,9 @@
     "environment": 0.5
   },
   "ed581298-4b6b-424d-9d59-97dc00099610": {
-    "education": 0.015625,
-    "labor": 0.984375
+    "education": 0.0078125,
+    "labor": 0.4921875,
+    "science and technology": 0.5
   },
   "ef301ade-bb1a-4880-a377-fd60a5cb9b63": {
     "labor": 0.003472222222222222,
@@ -701,12 +705,12 @@
   },
   "1335b5ce-6f99-4062-a265-567d831fbb90": {},
   "847bc1ce-0e61-4ed6-a5ec-13460bd7fa2b": {
-    "science and technology": 0.33449074074074076,
-    "health": 0.04513888888888889,
-    "religion and belief": 0.009259259259259259,
-    "environment": 0.05555555555555555,
-    "sport": 0.1111111111111111,
-    "lifestyle and leisure": 0.4444444444444444
+    "science and technology": 0.16724537037037038,
+    "health": 0.022569444444444444,
+    "religion and belief": 0.004629629629629629,
+    "environment": 0.027777777777777776,
+    "sport": 0.05555555555555555,
+    "lifestyle and leisure": 0.7222222222222222
   },
   "3f92123a-7b14-4259-a835-50a833a67605": {
     "science and technology": 0.5,
@@ -717,8 +721,8 @@
     "religion and belief": 0.5
   },
   "8f26d1e3-70ce-4140-91f4-afffd337352c": {
-    "sport": 0.5,
-    "science and technology": 0.5
+    "sport": 0.25,
+    "science and technology": 0.75
   },
   "47be7158-769b-4157-8ec0-6f2019141000": {
     "education": 0.02213541666666667,
@@ -729,10 +733,11 @@
     "lifestyle and leisure": 0.5
   },
   "d92d6673-e29e-4aaa-b0bf-9ae3984af1a1": {
-    "education": 0.39583333333333337,
-    "lifestyle and leisure": 0.010416666666666666,
-    "sport": 0.03125,
-    "labor": 0.5625
+    "education": 0.09895833333333334,
+    "lifestyle and leisure": 0.5026041666666666,
+    "sport": 0.0078125,
+    "labor": 0.140625,
+    "science and technology": 0.25
   },
   "8f369b19-2ec8-467a-a732-c5a7ec9800c2": {
     "health": 0.018229166666666668,
@@ -744,10 +749,11 @@
     "religion and belief": 0.5
   },
   "86d8a5bf-aa09-4de3-b949-478db224b85f": {
-    "sport": 0.0625,
-    "lifestyle and leisure": 0.3125,
-    "health": 0.125,
-    "religion and belief": 0.5
+    "sport": 0.03125,
+    "lifestyle and leisure": 0.15625,
+    "health": 0.0625,
+    "religion and belief": 0.25,
+    "environment": 0.5
   },
   "4c0a187c-fd4a-4ccf-9a41-6ace7d3bbb9d": {
     "labor": 0.7508680555555556,
@@ -757,34 +763,37 @@
     "environment": 0.15625
   },
   "3a64eb93-b5e9-4ef6-98f8-ad9de6d79b8d": {
-    "lifestyle and leisure": 0.2638888888888889,
-    "religion and belief": 0.013888888888888888,
-    "science and technology": 0.027777777777777776,
-    "environment": 0.027777777777777776,
-    "health": 0.6666666666666666
+    "lifestyle and leisure": 0.13194444444444448,
+    "religion and belief": 0.006944444444444445,
+    "science and technology": 0.01388888888888889,
+    "environment": 0.01388888888888889,
+    "health": 0.8333333333333334
   },
   "c77f3e5f-fff2-4ff3-a641-ab7b35b36077": {
-    "science and technology": 0.75,
-    "environment": 0.25
+    "science and technology": 0.875,
+    "environment": 0.125
   },
   "aef4f0a5-27f6-4a00-8d64-09ee6a62fe1a": {
-    "science and technology": 0.00390625,
-    "health": 0.19921875,
-    "environment": 0.015625,
-    "lifestyle and leisure": 0.03125,
-    "sport": 0.25,
-    "religion and belief": 0.5
+    "science and technology": 0.0013020833333333333,
+    "health": 0.3997395833333333,
+    "environment": 0.3385416666666667,
+    "lifestyle and leisure": 0.010416666666666666,
+    "sport": 0.08333333333333333,
+    "religion and belief": 0.16666666666666666
   },
   "3ebe703a-bc95-41ef-ad31-e8d3772b6070": {
-    "health": 0.013888888888888888,
-    "education": 0.04861111111111111,
-    "sport": 0.10416666666666667,
-    "science and technology": 0.6666666666666666,
-    "environment": 0.16666666666666666
+    "health": 0.004629629629629629,
+    "education": 0.016203703703703703,
+    "sport": 0.034722222222222224,
+    "science and technology": 0.2222222222222222,
+    "environment": 0.3888888888888889,
+    "lifestyle and leisure": 0.3333333333333333
   },
   "28d01fe5-0151-4c97-94c2-e3c582d408c6": {
-    "health": 0.25,
-    "labor": 0.75
+    "health": 0.08333333333333333,
+    "labor": 0.25,
+    "education": 0.3333333333333333,
+    "lifestyle and leisure": 0.3333333333333333
   },
   "6820e7ab-762d-42b7-bb3d-cffe406d3134": {
     "environment": 0.00012860082304526747,
@@ -822,38 +831,41 @@
     "sport": 0.04166666666666667
   },
   "1f6c2a63-6011-4d0c-b930-a2d7c4926071": {
-    "health": 0.25,
-    "science and technology": 0.25,
-    "lifestyle and leisure": 0.5
+    "health": 0.1875,
+    "science and technology": 0.020833333333333332,
+    "lifestyle and leisure": 0.20833333333333334,
+    "environment": 0.08333333333333333,
+    "sport": 0.5
   },
   "0108bd62-116a-45a7-8f4c-0398a7992ebb": {
     "health": 0.5,
     "science and technology": 0.5
   },
   "edf915dd-6934-4fde-95f7-93863b32c2bf": {
-    "education": 0.05555555555555555,
-    "sport": 0.05555555555555555,
-    "science and technology": 0.1111111111111111,
-    "lifestyle and leisure": 0.4444444444444444,
-    "health": 0.3333333333333333
+    "education": 0.027777777777777776,
+    "sport": 0.027777777777777776,
+    "science and technology": 0.05555555555555555,
+    "lifestyle and leisure": 0.2222222222222222,
+    "health": 0.16666666666666666,
+    "religion and belief": 0.5
   },
   "7a24912c-4a03-4ca8-ad3d-4e9df247d264": {
     "education": 1.0
   },
   "9ba4ccf6-1d25-4e61-af62-a39daaec984a": {
-    "religion and belief": 0.17013888888888892,
-    "health": 0.3506944444444444,
-    "lifestyle and leisure": 0.006944444444444445,
-    "labor": 0.02777777777777778,
-    "science and technology": 0.3888888888888889,
-    "environment": 0.05555555555555556
+    "religion and belief": 0.08506944444444446,
+    "health": 0.1753472222222222,
+    "lifestyle and leisure": 0.0034722222222222225,
+    "labor": 0.01388888888888889,
+    "science and technology": 0.6944444444444444,
+    "environment": 0.02777777777777778
   },
   "40656da5-be90-4f94-80dd-7dfaf8e8671a": {
-    "health": 0.024305555555555556,
-    "lifestyle and leisure": 0.5017361111111112,
-    "environment": 0.005208333333333333,
-    "education": 0.3229166666666667,
-    "science and technology": 0.14583333333333334
+    "health": 0.008101851851851851,
+    "lifestyle and leisure": 0.5005787037037037,
+    "environment": 0.001736111111111111,
+    "education": 0.1076388888888889,
+    "science and technology": 0.3819444444444444
   },
   "0adec95c-c655-4a60-9816-a67d792af91f": {
     "science and technology": 1.0
@@ -876,12 +888,13 @@
     "environment": 0.020833333333333336
   },
   "d33bff85-e4ac-4e1a-a3e6-d49ad7a5241d": {
-    "science and technology": 0.13940329218106995,
-    "environment": 0.003890174897119342,
-    "lifestyle and leisure": 0.2501286008230453,
-    "education": 0.001253858024691358,
-    "health": 0.10532407407407407,
-    "religion and belief": 0.5
+    "science and technology": 0.04646776406035665,
+    "environment": 0.0012967249657064473,
+    "lifestyle and leisure": 0.08337620027434843,
+    "education": 0.00041795267489711934,
+    "health": 0.03510802469135802,
+    "religion and belief": 0.16666666666666666,
+    "labor": 0.6666666666666666
   },
   "d83505fe-c574-45af-87e4-48e44d31dbc3": {
     "education": 0.07291666666666667,
@@ -911,19 +924,20 @@
     "religion and belief": 0.5
   },
   "695b02e6-aee5-48db-91f0-232d41f3e428": {
-    "labor": 0.25,
-    "science and technology": 0.75
+    "labor": 0.125,
+    "science and technology": 0.375,
+    "lifestyle and leisure": 0.5
   },
   "f88c3ed0-ae20-4cb9-8070-9594a3f1cc85": {
     "health": 0.5,
     "religion and belief": 0.5
   },
   "015b0894-8b21-48a2-b0bd-f13afd3ca8fe": {
-    "health": 0.0625,
-    "science and technology": 0.2569444444444444,
-    "environment": 0.013888888888888888,
-    "education": 0.16666666666666666,
-    "labor": 0.5
+    "health": 0.03125,
+    "science and technology": 0.6284722222222222,
+    "environment": 0.006944444444444444,
+    "education": 0.08333333333333333,
+    "labor": 0.25
   },
   "e89d89b4-b0eb-4f62-87ab-38628c3591ab": {
     "health": 0.3333333333333333,
@@ -931,27 +945,27 @@
     "lifestyle and leisure": 0.3333333333333333
   },
   "aa2cbcc0-824b-4764-87d9-41a81c85437d": {
-    "education": 0.006172839506172839,
-    "science and technology": 0.024691358024691357,
-    "health": 0.1728395061728395,
-    "environment": 0.018518518518518517,
-    "sport": 0.05555555555555555,
-    "lifestyle and leisure": 0.2222222222222222,
-    "religion and belief": 0.5
+    "education": 0.2503858024691358,
+    "science and technology": 0.2515432098765432,
+    "health": 0.010802469135802469,
+    "environment": 0.1886574074074074,
+    "sport": 0.003472222222222222,
+    "lifestyle and leisure": 0.2638888888888889,
+    "religion and belief": 0.03125
   },
   "ff88a277-2571-4690-a9bd-88a0e39079f8": {
-    "labor": 0.006944444444444444,
-    "science and technology": 0.006944444444444444,
-    "sport": 0.2638888888888889,
-    "lifestyle and leisure": 0.05555555555555555,
-    "health": 0.16666666666666666,
-    "religion and belief": 0.5
+    "labor": 0.003472222222222222,
+    "science and technology": 0.5034722222222222,
+    "sport": 0.13194444444444445,
+    "lifestyle and leisure": 0.027777777777777776,
+    "health": 0.08333333333333333,
+    "religion and belief": 0.25
   },
   "5bf844a6-ee7d-40b2-9e87-d07c9fb1c5a4": {
-    "labor": 0.13541666666666669,
-    "health": 0.010416666666666668,
-    "religion and belief": 0.27083333333333337,
-    "education": 0.5833333333333334
+    "labor": 0.06770833333333334,
+    "health": 0.005208333333333334,
+    "religion and belief": 0.6354166666666667,
+    "education": 0.2916666666666667
   },
   "28cbfc87-d52e-4256-97a8-f277987156b9": {
     "education": 0.006944444444444444,
@@ -986,16 +1000,17 @@
     "labor": 0.5
   },
   "e5d646a0-f261-48be-8191-3b0df5898aaa": {
-    "science and technology": 0.5013834635416667,
-    "health": 0.0027398003472222225,
-    "lifestyle and leisure": 0.2660590277777778,
-    "environment": 0.10221354166666667,
-    "education": 0.12760416666666666
+    "science and technology": 0.7506917317708334,
+    "health": 0.0013699001736111112,
+    "lifestyle and leisure": 0.1330295138888889,
+    "environment": 0.051106770833333336,
+    "education": 0.06380208333333333
   },
   "375c605d-470d-491d-835d-724ea23d5872": {
-    "sport": 0.25,
-    "lifestyle and leisure": 0.25,
-    "labor": 0.5
+    "sport": 0.08333333333333333,
+    "lifestyle and leisure": 0.4166666666666667,
+    "labor": 0.16666666666666666,
+    "environment": 0.3333333333333333
   },
   "f0d8909f-9428-4c95-b5f2-d5e17da87a36": {
     "environment": 0.1238425925925926,
@@ -1005,18 +1020,20 @@
     "education": 0.5
   },
   "5558ce76-2fd0-4ee0-a031-c7cc96cf954f": {
-    "science and technology": 0.08796296296296297,
-    "education": 0.004629629629629629,
-    "lifestyle and leisure": 0.5740740740740741,
-    "health": 0.16666666666666666,
-    "environment": 0.16666666666666666
+    "science and technology": 0.04398148148148148,
+    "education": 0.0023148148148148147,
+    "lifestyle and leisure": 0.28703703703703703,
+    "health": 0.08333333333333333,
+    "environment": 0.08333333333333333,
+    "religion and belief": 0.5
   },
   "913852bf-5ef9-4628-91a8-b5ff1ed1035e": {
-    "religion and belief": 0.0859375,
-    "education": 0.0078125,
-    "labor": 0.53125,
-    "sport": 0.125,
-    "health": 0.25
+    "religion and belief": 0.04296875,
+    "education": 0.00390625,
+    "labor": 0.265625,
+    "sport": 0.0625,
+    "health": 0.125,
+    "science and technology": 0.5
   },
   "a4a128a9-8254-4e98-b4fe-8365f2328d84": {
     "lifestyle and leisure": 0.0859375,
@@ -1061,11 +1078,11 @@
     "religion and belief": 0.5
   },
   "bc56a757-4060-45d0-8c59-2867f9cb3d6e": {
-    "labor": 0.0023148148148148147,
-    "health": 0.04398148148148148,
-    "religion and belief": 0.02314814814814815,
-    "sport": 0.09027777777777778,
-    "lifestyle and leisure": 0.8402777777777778
+    "labor": 0.0011574074074074073,
+    "health": 0.02199074074074074,
+    "religion and belief": 0.5115740740740741,
+    "sport": 0.04513888888888889,
+    "lifestyle and leisure": 0.4201388888888889
   },
   "2ecc31c2-4f8c-4386-b0c6-276f5f837ae0": {
     "health": 0.1875,
@@ -1086,10 +1103,10 @@
     "science and technology": 0.25
   },
   "1f82105e-a7b3-4020-9be0-c27acf830f36": {
-    "sport": 0.375,
-    "lifestyle and leisure": 0.041666666666666664,
-    "education": 0.08333333333333333,
-    "health": 0.5
+    "sport": 0.1875,
+    "lifestyle and leisure": 0.020833333333333332,
+    "education": 0.041666666666666664,
+    "health": 0.75
   },
   "6748db9f-50d7-4067-bc48-952a3a4d3808": {
     "health": 1.0
@@ -1107,11 +1124,11 @@
     "environment": 0.08333333333333333
   },
   "0706e2d2-2b32-4bdb-b634-1bee0c0a1b00": {
-    "education": 0.05555555555555555,
-    "health": 0.5277777777777778,
-    "science and technology": 0.08333333333333333,
-    "lifestyle and leisure": 0.08333333333333333,
-    "environment": 0.25
+    "education": 0.027777777777777776,
+    "health": 0.7638888888888888,
+    "science and technology": 0.041666666666666664,
+    "lifestyle and leisure": 0.041666666666666664,
+    "environment": 0.125
   },
   "9adac9b2-3f72-4174-b07d-a2190e5345b2": {
     "labor": 0.0026041666666666665,
@@ -1152,10 +1169,11 @@
     "environment": 0.5
   },
   "b43f543b-de25-4127-a51c-ded76239899f": {
-    "health": 0.3125,
-    "labor": 0.0625,
-    "science and technology": 0.125,
-    "sport": 0.5
+    "health": 0.15625,
+    "labor": 0.03125,
+    "science and technology": 0.0625,
+    "sport": 0.25,
+    "lifestyle and leisure": 0.5
   },
   "d5a238bf-7cb1-4bca-9cc9-69aa0228fddd": {},
   "3cd6bf96-91cc-4d64-baf3-f30fa06815b3": {
@@ -1171,7 +1189,8 @@
     "science and technology": 0.020833333333333332
   },
   "9bc7d014-c48e-4bed-9c9e-e13d2c06685d": {
-    "religion and belief": 1.0
+    "religion and belief": 0.5,
+    "lifestyle and leisure": 0.5
   },
   "b0611f5b-fd18-48c5-9aec-1451a9e6cd1a": {
     "education": 0.875,
@@ -1185,10 +1204,11 @@
     "lifestyle and leisure": 0.25
   },
   "1f7a2621-38f6-4a0c-8059-aea99147a668": {
-    "labor": 0.08333333333333333,
-    "science and technology": 0.08333333333333333,
-    "sport": 0.16666666666666666,
-    "health": 0.6666666666666666
+    "labor": 0.020833333333333336,
+    "science and technology": 0.020833333333333336,
+    "sport": 0.04166666666666667,
+    "health": 0.4166666666666667,
+    "lifestyle and leisure": 0.5
   },
   "6833e055-001e-4bb7-af99-42ed8577dbd9": {
     "labor": 0.006944444444444444,

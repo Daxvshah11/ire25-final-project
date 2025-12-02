@@ -106,12 +106,22 @@ def main():
 
     # Results
     print("\n--- A/B Test Results ---")
+    results_str = f"--- A/B Test Results (N={args.n}) ---\n"
     for g in ["A", "B"]:
         s = stats[g]["sessions"]
         c = stats[g]["clicks"]
         ctr = (c / s * 100) if s > 0 else 0.0
         name = "Baseline" if g == "A" else "Personalized"
-        print(f"{name} (Group {g}): {c}/{s} sessions with clicks (CTR: {ctr:.2f}%)")
+        line = f"{name} (Group {g}): {c}/{s} sessions with clicks (CTR: {ctr:.2f}%)\n"
+        print(line.strip())
+        results_str += line
+    
+    with open("ab_test_results.txt", "a") as f:
+        f.write(f"\nDate: {time.ctime()}\n")
+        f.write(results_str)
+        f.write("-" * 30 + "\n")
+    
+    print("Results saved to ab_test_results.txt")
 
 if __name__ == "__main__":
     main()
