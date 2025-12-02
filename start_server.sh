@@ -75,7 +75,7 @@ if [[ "$(docker images -q ire_project:1.0 2> /dev/null)" == "" ]]; then
   fi
 fi
 
-docker run --rm -p 3000:3000 \
+docker run --rm --platform linux/amd64 -p 3000:3000 \
  -v $(pwd)/data:/data \
  --tmpfs /tmp:rw,noexec,nosuid \
  --cap-drop ALL \
