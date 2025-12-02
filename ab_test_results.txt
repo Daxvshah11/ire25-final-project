@@ -4,3 +4,9 @@ Date: Tue Dec  2 06:54:10 2025
 Baseline (Group A): 20/264 sessions with clicks (CTR: 7.58%)
 Personalized (Group B): 28/236 sessions with clicks (CTR: 11.86%)
 ------------------------------
+
+Date: Tue Dec  2 08:12:27 2025
+--- A/B Test Results (N=500) ---
+Baseline (Group A): 22/270 sessions with clicks (CTR: 8.15%)
+Personalized (Group B): 21/230 sessions with clicks (CTR: 9.13%)
+------------------------------
