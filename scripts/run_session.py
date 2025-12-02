@@ -11,7 +11,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from src.sim_client import SimulatorClient
-from src.retriever import Retriever
+from src.retriever import Retriever, ElasticsearchRetriever
 from src.logger import SessionLogger
 from src.personalizer import (
     load_article_topics, 
@@ -48,10 +48,19 @@ def main():
     parser.add_argument("--index", default="data_index")
     parser.add_argument("--server", default="http://localhost:3000")
     parser.add_argument("--n", type=int, default=5)
+    parser.add_argument("--retriever", choices=["tfidf", "es"], default="tfidf", help="Retrieval method: tfidf or es")
+    parser.add_argument("--es-host", default="http://localhost:9200", help="Elasticsearch host")
     args = parser.parse_args()
 
     client = SimulatorClient(args.server)
-    retriever = Retriever(index_dir=args.index)
+    
+    if args.retriever == "es":
+        print(f"Using Elasticsearch retriever at {args.es_host}")
+        retriever = ElasticsearchRetriever(host=args.es_host)
+    else:
+        print(f"Using TF-IDF retriever from {args.index}")
+        retriever = Retriever(index_dir=args.index)
+        
     logger = SessionLogger()
 
     # load article topics
@@ -84,7 +93,9 @@ def main():
                 ranked_ids = [a for a, _ in reranked]
             
             resp = client.post_ranklist(query_id, user_id, ranked_ids)
-            
+            # python -m src.es_indexer --articles articles.jsonl --host http://localhost:9200
+            # python scripts/run_session.py --retriever es --es-host http://localhost:9200 --n 5
+
             logger.log({
                 "user_id": user_id,
                 "query_id": query_id,
@@ -105,7 +116,6 @@ def main():
     # Save profiles to disk at the end of the run
     print("Saving user profiles to user_profiles.json...")
     save_user_profiles(user_profiles, "user_profiles.json")
-
-
+ 
 if __name__ == "__main__":
     main()
